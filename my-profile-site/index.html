@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ko — Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/70 backdrop-blur-lg border-b border-gray-200/50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">Ko</a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-base font-medium text-gray-600 hover:text-violet-600 transition-colors">About</a>
+        <a href="#skills" class="text-base font-medium text-gray-600 hover:text-violet-600 transition-colors">Skills</a>
+        <a href="#projects" class="text-base font-medium text-gray-600 hover:text-violet-600 transition-colors">Projects</a>
+        <a href="#contact" class="text-base font-medium text-gray-600 hover:text-violet-600 transition-colors">Contact</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="메뉴 열기">
+        <svg id="menu-icon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200/50 bg-white/90 backdrop-blur-lg">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="#about" class="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors mobile-link">About</a>
+        <a href="#skills" class="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors mobile-link">Skills</a>
+        <a href="#projects" class="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors mobile-link">Projects</a>
+        <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-violet-600 to-purple-700 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_60%)]"></div>
+    <div class="relative z-10 text-center px-6">
+      <p class="text-sm md:text-base font-medium tracking-widest uppercase text-blue-200 mb-4">Hello, I'm</p>
+      <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-4">Ko</h1>
+      <p class="text-xl md:text-2xl font-light text-blue-100 mb-8">Engineer</p>
+      <p class="max-w-md mx-auto text-blue-100/80 leading-relaxed mb-10">데이터와 코드로 문제를 해결하는 엔지니어입니다.<br>심플하고 효율적인 솔루션을 만듭니다.</p>
+      <a href="#about" class="inline-block px-8 py-3 bg-white text-violet-700 font-semibold rounded-full hover:shadow-lg hover:shadow-white/20 transition-all duration-300 hover:-translate-y-0.5">더 알아보기</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-slate-50/50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">About</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mb-12 rounded-full"></div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-2xl bg-gradient-to-br from-blue-100 to-violet-100 flex items-center justify-center">
+          <span class="text-6xl md:text-8xl font-bold bg-gradient-to-br from-blue-600 to-violet-600 bg-clip-text text-transparent">K</span>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Engineer, Problem Solver</h3>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            안녕하세요. 데이터와 소프트웨어 엔지니어링에 열정을 가진 엔지니어 Ko입니다.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Python을 주력으로 데이터 분석, 머신러닝, 그리고 다양한 자동화 솔루션을 개발하고 있습니다. 복잡한 문제를 단순하게 풀어내는 것을 좋아합니다.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            효율적인 코드와 깔끔한 아키텍처를 추구하며, 끊임없이 배우고 성장하는 것을 목표로 합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Skills</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-emerald-500 mx-auto mb-12 rounded-full"></div>
+
+      <!-- Python 기술 스택 -->
+      <div class="mb-12">
+        <h3 class="text-lg font-semibold text-gray-700 mb-6 text-center">Python Ecosystem</h3>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium border border-emerald-200">Python</span>
+          <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-200">Pandas</span>
+          <span class="px-4 py-2 bg-violet-50 text-violet-700 rounded-full text-sm font-medium border border-violet-200">NumPy</span>
+          <span class="px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium border border-emerald-200">Scikit-learn</span>
+          <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-200">Statsmodels</span>
+          <span class="px-4 py-2 bg-violet-50 text-violet-700 rounded-full text-sm font-medium border border-violet-200">Matplotlib</span>
+          <span class="px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium border border-emerald-200">Jupyter</span>
+        </div>
+      </div>
+
+      <!-- 추가 스킬 영역 -->
+      <div>
+        <h3 class="text-lg font-semibold text-gray-700 mb-6 text-center">Tools & Others</h3>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium border border-gray-200">Git</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium border border-gray-200">SQL</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium border border-gray-200">Docker</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium border border-gray-200">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Projects</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mb-12 rounded-full"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Project Card 1 -->
+        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="h-2 bg-gradient-to-r from-blue-500 to-violet-500"></div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">데이터 분석 대시보드</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">대규모 데이터셋을 시각화하고 인사이트를 도출하는 인터랙티브 대시보드 프로젝트입니다.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="px-2.5 py-1 bg-emerald-50 text-emerald-600 rounded text-xs font-medium">Python</span>
+              <span class="px-2.5 py-1 bg-blue-50 text-blue-600 rounded text-xs font-medium">Pandas</span>
+              <span class="px-2.5 py-1 bg-violet-50 text-violet-600 rounded text-xs font-medium">Streamlit</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sm font-medium text-violet-600 hover:text-violet-800 transition-colors group-hover:gap-2 gap-1">
+              View Project
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="h-2 bg-gradient-to-r from-violet-500 to-purple-500"></div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">ML 예측 모델</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">머신러닝 알고리즘을 활용하여 비즈니스 지표를 예측하는 모델을 구축하고 배포한 프로젝트입니다.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="px-2.5 py-1 bg-emerald-50 text-emerald-600 rounded text-xs font-medium">Scikit-learn</span>
+              <span class="px-2.5 py-1 bg-blue-50 text-blue-600 rounded text-xs font-medium">NumPy</span>
+              <span class="px-2.5 py-1 bg-violet-50 text-violet-600 rounded text-xs font-medium">Flask</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sm font-medium text-violet-600 hover:text-violet-800 transition-colors group-hover:gap-2 gap-1">
+              View Project
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="h-2 bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">자동화 파이프라인</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">데이터 수집부터 전처리, 분석까지 전 과정을 자동화하는 ETL 파이프라인을 설계했습니다.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="px-2.5 py-1 bg-emerald-50 text-emerald-600 rounded text-xs font-medium">Python</span>
+              <span class="px-2.5 py-1 bg-blue-50 text-blue-600 rounded text-xs font-medium">SQL</span>
+              <span class="px-2.5 py-1 bg-violet-50 text-violet-600 rounded text-xs font-medium">Docker</span>
+            </div>
+            <a href="#" class="inline-flex items-center text-sm font-medium text-violet-600 hover:text-violet-800 transition-colors group-hover:gap-2 gap-1">
+              View Project
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-violet-500 to-blue-500 mx-auto mb-12 rounded-full"></div>
+      <p class="text-gray-600 mb-12 max-w-md mx-auto leading-relaxed">프로젝트 협업이나 궁금한 점이 있으시면 편하게 연락해 주세요.</p>
+      <a href="mailto:abc@abc.com" class="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-violet-600 to-blue-600 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-violet-500/30 transition-all duration-300 hover:-translate-y-0.5">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        abc@abc.com
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-sm">&copy; 2026 Ko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a, .mobile-link');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 100;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+        if (scrollY >= top && scrollY < top + height) {
+          navLinks.forEach(link => {
+            link.classList.remove('text-violet-600');
+            link.classList.add('text-gray-600');
+            if (link.getAttribute('href') === '#' + id) {
+              link.classList.add('text-violet-600');
+              link.classList.remove('text-gray-600');
+            }
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
