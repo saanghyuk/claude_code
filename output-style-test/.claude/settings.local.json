@@ -1,3 +1,10 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash",
+      "WebFetch",
+      "mcp__plugin_context7_context7__*"
+    ]
+  },
   "outputStyle": "Explanatory"
 }

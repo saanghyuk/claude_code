@@ -55,13 +55,69 @@ export function Hero() {
 
           {/* Hero Image Placeholder */}
           <div className="mt-16 md:mt-24">
-            <div className="relative overflow-hidden rounded-lg border border-border bg-muted/50">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 via-primary/5 to-transparent flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-muted-foreground text-sm">
-                    Beautiful dashboard preview
+            <div className="relative overflow-hidden rounded-lg border border-border bg-muted/50 shadow-2xl">
+              {/* Dashboard Preview */}
+              <div className="aspect-video bg-gradient-to-br from-primary/20 via-primary/10 to-background">
+                {/* Dashboard Header */}
+                <div className="border-b border-border/50 bg-background/50 px-6 py-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="h-8 w-8 rounded-lg bg-primary/20" />
+                      <div className="h-2 w-24 rounded-full bg-muted" />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-2 w-16 rounded-full bg-muted" />
+                      <div className="h-8 w-8 rounded-lg bg-muted/50" />
+                    </div>
                   </div>
                 </div>
+
+                {/* Dashboard Content */}
+                <div className="p-6">
+                  <div className="grid gap-4 md:grid-cols-3 mb-6">
+                    {[1, 2, 3].map((i) => (
+                      <div
+                        key={i}
+                        className="rounded-lg border border-border/50 bg-background/50 p-4"
+                      >
+                        <div className="mb-3 h-2 w-12 rounded-full bg-muted" />
+                        <div className="h-6 w-20 rounded-full bg-primary/30" />
+                        <div className="mt-2 h-2 w-16 rounded-full bg-muted/50" />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="rounded-lg border border-border/50 bg-background/50 p-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="h-2 w-32 rounded-full bg-muted" />
+                      <div className="h-6 w-6 rounded-lg bg-muted/50" />
+                    </div>
+                    <div className="space-y-3">
+                      {[1, 2, 3].map((i) => (
+                        <div key={i} className="h-2 w-full rounded-full bg-muted/30" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Glassmorphism overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none" />
+            </div>
+
+            {/* Stats below preview */}
+            <div className="mt-8 grid gap-6 sm:grid-cols-3 text-center">
+              <div>
+                <div className="text-3xl font-bold text-primary">99.9%</div>
+                <div className="text-sm text-muted-foreground">Uptime</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground">Support</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary">10K+</div>
+                <div className="text-sm text-muted-foreground">Users</div>
               </div>
             </div>
           </div>

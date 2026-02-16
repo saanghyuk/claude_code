@@ -1,0 +1,2 @@
+[    3680ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/blog/nextjs-16-guide?_rsc=1n5ie:0
+[    3755ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/blog/nextjs-16-guide:0
