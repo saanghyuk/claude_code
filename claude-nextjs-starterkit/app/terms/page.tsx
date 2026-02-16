@@ -43,7 +43,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-4">3. Disclaimer</h2>
                 <p>
-                  The materials on the Modern Web Starter Kit website are provided on an 'as is'
+                  The materials on the Modern Web Starter Kit website are provided on an &apos;as is&apos;
                   basis. The site makes no warranties, expressed or implied, and hereby disclaims
                   and negates all other warranties including, without limitation, implied warranties
                   or conditions of merchantability, fitness for a particular purpose, or non-infringement

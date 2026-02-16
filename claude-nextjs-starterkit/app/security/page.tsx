@@ -42,7 +42,7 @@ export default function SecurityPage() {
               Security & Privacy
             </h1>
             <p className="text-lg text-muted-foreground">
-              Your application's security is our priority
+              Your application&apos;s security is our priority
             </p>
           </div>
         </Container>

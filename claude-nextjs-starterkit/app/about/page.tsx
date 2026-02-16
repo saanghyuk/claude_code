@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 import { Container } from "@/components/layout/container"
 import { Card } from "@/components/ui/card"
-import { Github, Twitter, Linkedin } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "About | Modern Web Starter Kit",

@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/config"
 import { Container } from "./container"
 import { MobileMenu } from "./mobile-menu"
-import { cn } from "@/lib/utils"
 
 export function Header() {
   const { theme, setTheme } = useTheme()

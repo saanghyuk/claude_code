@@ -6,7 +6,6 @@ import {
   Moon,
   Smartphone,
   Shield,
-  Eye,
   Zap,
   Accessibility,
   GitBranch,

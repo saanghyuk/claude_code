@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import Link from "next/link"
 import { Container } from "@/components/layout/container"
 import { Card } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"

@@ -38,7 +38,7 @@ export default function CareersPage() {
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl">
-              We're Hiring
+              We&apos;re Hiring
             </h1>
             <p className="text-lg text-muted-foreground">
               Join our team and help shape the future of web development
@@ -123,7 +123,7 @@ export default function CareersPage() {
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="mb-4 text-3xl font-bold tracking-tight">
-              Don't see what you're looking for?
+              Don&apos;t see what you&apos;re looking for?
             </h2>
             <p className="mb-8 text-muted-foreground">
               Send us your resume and tell us how you can help
