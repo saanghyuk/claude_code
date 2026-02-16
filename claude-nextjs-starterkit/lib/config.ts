@@ -62,7 +62,7 @@ export const siteConfig = {
         },
         {
           title: "API Reference",
-          href: "/api",
+          href: "/api-reference",
         },
         {
           title: "Community",
